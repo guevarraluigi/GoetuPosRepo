@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Main" customModule="GoetuPos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Tn8-lR-KPb" userLabel="imgBg">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gm3-zP-UlK" userLabel="vwHeader">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SALON POS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qr-oV-s9e">
+                                        <rect key="frame" x="10" y="0.0" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="kyp-MW-XNR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date : Aug-10-2017 4:20 PM | User : arvin_pogi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgU-Wz-Q0g">
+                                        <rect key="frame" x="1103" y="0.0" width="253" height="30"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0qr-oV-s9e" firstAttribute="top" secondItem="gm3-zP-UlK" secondAttribute="top" id="6S5-dd-n3g"/>
+                                    <constraint firstAttribute="bottom" secondItem="AgU-Wz-Q0g" secondAttribute="bottom" id="If5-eU-egB"/>
+                                    <constraint firstItem="0qr-oV-s9e" firstAttribute="leading" secondItem="gm3-zP-UlK" secondAttribute="leading" constant="10" id="Pl8-Ou-cB8"/>
+                                    <constraint firstAttribute="bottom" secondItem="0qr-oV-s9e" secondAttribute="bottom" id="aiq-3P-r0l"/>
+                                    <constraint firstAttribute="trailing" secondItem="AgU-Wz-Q0g" secondAttribute="trailing" constant="10" id="eVz-Sh-cOb"/>
+                                    <constraint firstAttribute="height" constant="30" id="jjg-LE-Jn4"/>
+                                    <constraint firstItem="AgU-Wz-Q0g" firstAttribute="top" secondItem="gm3-zP-UlK" secondAttribute="top" id="naa-dG-kyR"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vNi-3y-P63" userLabel="StackVw_FooterMenu">
+                                <rect key="frame" x="10" y="954" width="1346" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxc-EJ-5JW">
+                                        <rect key="frame" x="0.0" y="0.0" width="159.5" height="60"/>
+                                        <color key="backgroundColor" red="0.10674834996461868" green="0.73818320035934448" blue="0.61397427320480347" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="35" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Function"/>
+                                        <connections>
+                                            <action selector="btnFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hix-YP-mDk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vus-CP-75H">
+                                        <rect key="frame" x="169.5" y="0.0" width="159.5" height="60"/>
+                                        <color key="backgroundColor" red="0.17873436212539673" green="0.80021655559539795" blue="0.43831586837768555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="35" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Move"/>
+                                        <connections>
+                                            <action selector="btnMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2Y-38-JPZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2e-tt-gPH">
+                                        <rect key="frame" x="339" y="0.0" width="159.5" height="60"/>
+                                        <color key="backgroundColor" red="0.2032264769077301" green="0.58989763259887695" blue="0.86568313837051392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="35" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Check In"/>
+                                        <connections>
+                                            <action selector="btnCheckIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBL-a7-A3S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp8-iT-1yw">
+                                        <rect key="frame" x="508.5" y="0.0" width="159.5" height="60"/>
+                                        <color key="backgroundColor" red="0.60201120376586914" green="0.35092604160308838" blue="0.71024352312088013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="35" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Appointment"/>
+                                        <connections>
+                                            <action selector="btnAppointmentBook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H99-8i-34L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNH-m0-Bkb">
+                                        <rect key="frame" x="678" y="0.0" width="159.5" height="60"/>
+                                        <color key="backgroundColor" red="0.94388735294342041" green="0.77195864915847778" blue="0.055162154138088226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="35" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Wait List"/>
+                                        <connections>
+                                            <action selector="btnWaitList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBX-2c-q9R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80c-Rn-LNt">
+                                        <rect key="frame" x="847.5" y="0.0" width="159.5" height="60"/>
+                                        <color key="backgroundColor" red="0.90692424774169922" green="0.49232977628707886" blue="0.13552546501159668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="35" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Fast Sale"/>
+                                        <connections>
+                                            <action selector="btnFastSale:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JN4-wN-h4V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfl-P5-fwC">
+                                        <rect key="frame" x="1017" y="0.0" width="159.5" height="60"/>
+                                        <color key="backgroundColor" red="0.90734595060348511" green="0.30189144611358643" blue="0.23812294006347656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="35" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Refund"/>
+                                        <connections>
+                                            <action selector="btnRefund:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mq0-XA-3Ga"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5V-eF-Aqn">
+                                        <rect key="frame" x="1186.5" y="0.0" width="159.5" height="60"/>
+                                        <color key="backgroundColor" red="0.99338597059249878" green="0.17412903904914856" blue="0.55396157503128052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="35" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Exit"/>
+                                        <connections>
+                                            <action selector="btnExit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QoA-Ut-c51"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="mn6-KR-ZaT"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lh0-xR-3el" userLabel="StackVw_Body">
+                                <rect key="frame" x="10" y="30" width="1346" height="914"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gN-Ut-fQA" userLabel="vwBody1">
+                                        <rect key="frame" x="0.0" y="0.0" width="668" height="914"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVr-Ir-Pmq" userLabel="vwHeader1">
+                                                <rect key="frame" x="0.0" y="0.0" width="668" height="45"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specialist on Queue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA1-6p-gFX">
+                                                        <rect key="frame" x="10" y="0.0" width="658" height="45"/>
+                                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                                        <color key="textColor" red="0.086425177752971649" green="0.28484019637107849" blue="0.60521185398101807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="eA1-6p-gFX" firstAttribute="top" secondItem="aVr-Ir-Pmq" secondAttribute="top" id="PYb-D2-qhp"/>
+                                                    <constraint firstItem="eA1-6p-gFX" firstAttribute="leading" secondItem="aVr-Ir-Pmq" secondAttribute="leading" constant="10" id="Rc8-oR-gYW"/>
+                                                    <constraint firstAttribute="bottom" secondItem="eA1-6p-gFX" secondAttribute="bottom" id="dgY-wr-oRF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eA1-6p-gFX" secondAttribute="trailing" id="eND-7C-9o6"/>
+                                                    <constraint firstAttribute="height" constant="45" id="nyA-iP-aT5"/>
+                                                </constraints>
+                                            </view>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f3K-TP-sj7" userLabel="colvwSpecialist">
+                                                <rect key="frame" x="0.0" y="45" width="668" height="869"/>
+                                                <color key="backgroundColor" red="0.81630688905715942" green="0.86319655179977417" blue="0.92344933748245239" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ExI-bI-fpb">
+                                                    <size key="itemSize" width="50" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0Nb-Hl-ehq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </view>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="f3K-TP-sj7" firstAttribute="leading" secondItem="1gN-Ut-fQA" secondAttribute="leading" id="SW5-VX-A1l"/>
+                                            <constraint firstAttribute="bottom" secondItem="f3K-TP-sj7" secondAttribute="bottom" id="Sf6-pq-mMF"/>
+                                            <constraint firstItem="f3K-TP-sj7" firstAttribute="top" secondItem="aVr-Ir-Pmq" secondAttribute="bottom" id="Vx0-5Z-oZF"/>
+                                            <constraint firstAttribute="trailing" secondItem="aVr-Ir-Pmq" secondAttribute="trailing" id="YOZ-pQ-5Zd"/>
+                                            <constraint firstItem="aVr-Ir-Pmq" firstAttribute="top" secondItem="1gN-Ut-fQA" secondAttribute="top" id="an4-ci-Rbr"/>
+                                            <constraint firstItem="aVr-Ir-Pmq" firstAttribute="leading" secondItem="1gN-Ut-fQA" secondAttribute="leading" id="hqu-Nq-lNi"/>
+                                            <constraint firstAttribute="trailing" secondItem="f3K-TP-sj7" secondAttribute="trailing" id="vod-To-sMh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsD-SS-4mG" userLabel="vwBody2">
+                                        <rect key="frame" x="678" y="0.0" width="668" height="914"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWm-B8-fMZ" userLabel="vwHeader2">
+                                                <rect key="frame" x="0.0" y="0.0" width="668" height="45"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWv-XS-aSa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
+                                                        <color key="backgroundColor" red="0.2032264769077301" green="0.58989763259887695" blue="0.86568313837051392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="FNm-I0-80s"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                                        <state key="normal" title="Appointment"/>
+                                                        <connections>
+                                                            <action selector="btnAppointmentList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJI-4U-ImG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nl9-xO-98w">
+                                                        <rect key="frame" x="102" y="0.0" width="100" height="45"/>
+                                                        <color key="backgroundColor" red="0.90692424774169922" green="0.49232977628707886" blue="0.13552546501159668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="AiF-qK-mu3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                                        <state key="normal" title="In Service"/>
+                                                        <connections>
+                                                            <action selector="btnInServiceList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qo5-ee-Dyz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98L-EN-O9O">
+                                                        <rect key="frame" x="204" y="0.0" width="100" height="45"/>
+                                                        <color key="backgroundColor" red="0.2032264769077301" green="0.58989763259887695" blue="0.86568313837051392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="BpS-PD-cd8"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                                        <state key="normal" title="Waiting List"/>
+                                                        <connections>
+                                                            <action selector="btnWaitingList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4P1-Eq-3r5"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="7Lk-n8-q6B"/>
+                                                    <constraint firstAttribute="bottom" secondItem="KWv-XS-aSa" secondAttribute="bottom" id="AtD-j6-xXg"/>
+                                                    <constraint firstItem="98L-EN-O9O" firstAttribute="leading" secondItem="Nl9-xO-98w" secondAttribute="trailing" constant="2" id="SeJ-be-rSY"/>
+                                                    <constraint firstItem="Nl9-xO-98w" firstAttribute="top" secondItem="XWm-B8-fMZ" secondAttribute="top" id="Uef-qh-tyw"/>
+                                                    <constraint firstItem="98L-EN-O9O" firstAttribute="top" secondItem="XWm-B8-fMZ" secondAttribute="top" id="VjH-Jp-P0d"/>
+                                                    <constraint firstItem="KWv-XS-aSa" firstAttribute="top" secondItem="XWm-B8-fMZ" secondAttribute="top" id="dXt-nV-lKP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="98L-EN-O9O" secondAttribute="bottom" id="dkX-k9-0RM"/>
+                                                    <constraint firstItem="KWv-XS-aSa" firstAttribute="leading" secondItem="XWm-B8-fMZ" secondAttribute="leading" id="pQG-ui-ufH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Nl9-xO-98w" secondAttribute="bottom" id="uaD-kI-HFA"/>
+                                                    <constraint firstItem="Nl9-xO-98w" firstAttribute="leading" secondItem="KWv-XS-aSa" secondAttribute="trailing" constant="2" id="wxa-dZ-7ab"/>
+                                                </constraints>
+                                            </view>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="X2B-ZR-4pf" userLabel="colvwInService">
+                                                <rect key="frame" x="0.0" y="45" width="668" height="869"/>
+                                                <color key="backgroundColor" red="0.81630688905715942" green="0.86319655179977417" blue="0.92344933748245239" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Y6J-x7-A00">
+                                                    <size key="itemSize" width="50" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="L0i-U9-fTH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </view>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="XWm-B8-fMZ" firstAttribute="leading" secondItem="rsD-SS-4mG" secondAttribute="leading" id="H4k-bV-BIO"/>
+                                            <constraint firstAttribute="trailing" secondItem="XWm-B8-fMZ" secondAttribute="trailing" id="IIG-ZP-Kul"/>
+                                            <constraint firstItem="XWm-B8-fMZ" firstAttribute="top" secondItem="rsD-SS-4mG" secondAttribute="top" id="ZZ5-L9-MZX"/>
+                                            <constraint firstAttribute="bottom" secondItem="X2B-ZR-4pf" secondAttribute="bottom" id="c9U-gO-By6"/>
+                                            <constraint firstItem="X2B-ZR-4pf" firstAttribute="leading" secondItem="rsD-SS-4mG" secondAttribute="leading" id="d2p-Ya-gSf"/>
+                                            <constraint firstItem="X2B-ZR-4pf" firstAttribute="top" secondItem="XWm-B8-fMZ" secondAttribute="bottom" id="lxM-83-IWv"/>
+                                            <constraint firstAttribute="trailing" secondItem="X2B-ZR-4pf" secondAttribute="trailing" id="pRi-In-Lab"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gm3-zP-UlK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0Ay-YI-8Py"/>
+                            <constraint firstAttribute="trailing" secondItem="Tn8-lR-KPb" secondAttribute="trailing" id="58H-zF-WeY"/>
+                            <constraint firstItem="vNi-3y-P63" firstAttribute="top" secondItem="lh0-xR-3el" secondAttribute="bottom" constant="10" id="5J1-M9-Jfv"/>
+                            <constraint firstAttribute="bottom" secondItem="Tn8-lR-KPb" secondAttribute="bottom" id="CSE-Nd-tuD"/>
+                            <constraint firstItem="gm3-zP-UlK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LVt-i5-K8p"/>
+                            <constraint firstItem="lh0-xR-3el" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="OEo-bA-fJ7"/>
+                            <constraint firstItem="Tn8-lR-KPb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Vmp-mW-Mxa"/>
+                            <constraint firstItem="lh0-xR-3el" firstAttribute="top" secondItem="gm3-zP-UlK" secondAttribute="bottom" id="YZu-se-d2O"/>
+                            <constraint firstAttribute="trailing" secondItem="vNi-3y-P63" secondAttribute="trailing" constant="10" id="c8F-YH-FEG"/>
+                            <constraint firstItem="vNi-3y-P63" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="cn3-KD-lwv"/>
+                            <constraint firstAttribute="bottom" secondItem="vNi-3y-P63" secondAttribute="bottom" constant="10" id="eAl-Ec-SeD"/>
+                            <constraint firstItem="Tn8-lR-KPb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hWh-nb-s5i"/>
+                            <constraint firstAttribute="trailing" secondItem="lh0-xR-3el" secondAttribute="trailing" constant="10" id="hmc-cf-yw0"/>
+                            <constraint firstAttribute="trailing" secondItem="gm3-zP-UlK" secondAttribute="trailing" id="iru-Gi-CCA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAppointment" destination="xp8-iT-1yw" id="9D5-E4-tbu"/>
+                        <outlet property="btnAppointmentList" destination="KWv-XS-aSa" id="IyU-14-Xyr"/>
+                        <outlet property="btnCheckIn" destination="V2e-tt-gPH" id="ZwI-RB-rcI"/>
+                        <outlet property="btnExit" destination="X5V-eF-Aqn" id="BYV-xc-scY"/>
+                        <outlet property="btnFastSale" destination="80c-Rn-LNt" id="Fcs-J0-g89"/>
+                        <outlet property="btnFunction" destination="yxc-EJ-5JW" id="Qua-ct-avO"/>
+                        <outlet property="btnInServiceList" destination="Nl9-xO-98w" id="LBy-wM-A4o"/>
+                        <outlet property="btnMove" destination="Vus-CP-75H" id="SxH-lf-bzW"/>
+                        <outlet property="btnRefund" destination="Pfl-P5-fwC" id="Tdp-Wu-j9s"/>
+                        <outlet property="btnWaitList" destination="XNH-m0-Bkb" id="lFD-MG-GiK"/>
+                        <outlet property="btnWaitingList" destination="98L-EN-O9O" id="FxC-4Y-1zH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.609375" y="37.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main_bg" width="1920" height="1200"/>
+    </resources>
+</document>
